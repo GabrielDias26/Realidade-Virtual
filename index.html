@@ -8,7 +8,7 @@
   </head>
   
   <body style="margin: 0px; overflow: hidden;">
-    <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
+    <a-scene embedded arjs="sourceType: webcam;">
       
       <a-assets>
         <img id="coyote" src="https://media.tenor.com/yS7S9mZis70AAAAC/spurs-spurscoyote.gif">
@@ -18,12 +18,12 @@
         <a-entity 
           geometry="primitive: plane; width: 1.5; height: 1.5" 
           position="0 1 0" 
-          material="shader: gif; src: #coyote; transparent: true; side: double;" camera>
+          material="shader: gif; src: #coyote; transparent: true; side: double;">
         </a-entity>
-        
       </a-marker>
 
-     <!-- <a-entity camera></a-entity> -->
+      <a-entity camera></a-entity>
+      
     </a-scene>
   </body>
 </html>
