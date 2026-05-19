@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Primeira experiência de RA usando o AR.js e o A-frame. Marcador Hiro e modelos 3D do A-frame.</title>
@@ -6,9 +7,16 @@
   </head>
   <body style="margin: 0px; overflow: hidden">
     <a-scene vr-mode-ui="enabled: false" embedded arjs="debugUIEnabled: false">
-        <a-marker preset="hiro">
-        <a-entity gltf-model="kasane_teto.glb" position="-90 0 0" scale="0.05 0.05 0.05" rotation="0 0 0"></a-entity>
+      
+      <a-marker preset="hiro">
+        <a-entity 
+          gltf-model="kasane_teto.glb" 
+          position="0 0 0" 
+          scale="0.05 0.05 0.05" 
+          rotation="0 0 0">
+        </a-entity>
       </a-marker>
+      
       <a-entity camera></a-entity>
     </a-scene>
   </body>
