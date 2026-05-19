@@ -1,6 +1,43 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>AR.js teste com Modelo 3D</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  </head>
+
+  <body style="margin: 0px; overflow: hidden">
+
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="sourceType: webcam; debugUIEnabled: false">
+
+      <a-assets>
+        <a-asset-item id="meuModelo3D" src="anime.glb"></a-asset-item>
+      </a-assets>
+
+      <a-marker preset="hiro">
+        
+        <a-entity  
+          gltf-model="#meuModelo3D"
+          position="0 0.5 0"
+          rotation="0 0 0"
+          scale="0.2 0.2 0.2">
+        </a-entity>
+
+      </a-marker>
+
+      <a-entity camera></a-entity>
+
+    </a-scene>
+
+  </body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
     <title>AR.js teste</title>
     <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
@@ -29,4 +66,4 @@
     </a-scene>
 
   </body>
-</html>
+</html> -->
